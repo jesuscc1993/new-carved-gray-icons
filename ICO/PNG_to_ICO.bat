@@ -21,6 +21,7 @@ for %%x in (
   games
   home
   image
+  library
   lock
   magnifier
   shortcuts
