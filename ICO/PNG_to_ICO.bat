@@ -18,6 +18,7 @@ for %%x in (
   folder
   fonts
   games
+  home
   image
   lock
   magnifier
