@@ -14,6 +14,7 @@ for %%x in (
   design
   desktop
   downloads
+  eye
   floppy
   folder
   fonts
