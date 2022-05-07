@@ -24,18 +24,19 @@ a:hover {
   text-align: center;
 }
 
-.grid {
+/*.grid {
   display: grid;
   grid-gap: var(--spacing);
   grid-template-columns: repeat(auto-fill, var(--icon-size));
   grid-template-rows: repeat(auto-fill, var(--icon-size));
-}
+}*/
 
 .group {
   margin: 36px 0;
 }
 
 .icon {
-  height: var(--icon-size);
-  width: var(--icon-size);
+  margin: var(--spacing);
+  max-height: var(--icon-size);
+  max-width: var(--icon-size);
 }
