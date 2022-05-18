@@ -2,6 +2,7 @@
 
 for %%x in (
   adult
+  archive
   asterisk
   audio
   camera
