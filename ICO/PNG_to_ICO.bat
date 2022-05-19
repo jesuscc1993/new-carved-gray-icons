@@ -2,6 +2,7 @@
 
 for %%x in (
   adult
+  arcade
   archive
   asterisk
   audio
