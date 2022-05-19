@@ -12,6 +12,7 @@ for %%x in (
   cloud
   cog
   comic
+  computer
   design
   desktop
   downloads
