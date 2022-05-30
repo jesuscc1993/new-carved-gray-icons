@@ -33,6 +33,7 @@ for %%x in (
   terminal
   text
   tools
+  trash
   user
   video
   windows
