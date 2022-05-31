@@ -1,7 +1,7 @@
 :root {
   --icon-size: 128px;
-  --spacing: 16px;
-  --col-count: 8;
+  --spacing: 8px;
+  --col-count: 9;
 }
 
 body {
