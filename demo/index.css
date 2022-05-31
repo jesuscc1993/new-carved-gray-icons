@@ -1,6 +1,7 @@
 :root {
   --icon-size: 128px;
   --spacing: 16px;
+  --col-count: 8;
 }
 
 body {
@@ -20,7 +21,7 @@ a:hover {
 
 .main {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: calc((var(--icon-size) + var(--spacing) * 2) * var(--col-count));
   text-align: center;
 }
 
