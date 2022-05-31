@@ -14,6 +14,7 @@ for %%x in (
   cog
   comic
   computer
+  cube
   design
   desktop
   downloads
