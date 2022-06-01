@@ -6,6 +6,7 @@ for %%x in (
   archive
   asterisk
   audio
+  book
   camera
   cd
   chrome
