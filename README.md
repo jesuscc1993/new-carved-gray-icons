@@ -16,3 +16,7 @@ Resolutions 16px, 24px and 32px simply show the shape in white.
 # Download
 
 - [Download latest icons](https://github.com/jesuscc1993/new-carved-gray-icons/archive/refs/heads/gh-pages.zip)
+
+# TODO
+
+- Users icon
