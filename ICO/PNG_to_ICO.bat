@@ -16,14 +16,17 @@ for %%x in (
   comic
   computer
   cube
+  database
   design
   desktop
   downloads
   eye
   floppy
   folder
+  folder_zipped
   fonts
   games
+  globe
   home
   image
   library
@@ -37,8 +40,10 @@ for %%x in (
   tools
   trash
   user
+  users
   video
   windows
-) do (  
-  magick convert "../PNG/%%x_16px.png" "../PNG/%%x_24px.png" "../PNG/%%x_32px.png" "../PNG/%%x_48px.png" "../PNG/%%x_256px.png" "%%x.ico"
+) do (
+  REM absolute path is more performant
+  "Z:\Software\Heavy\Multimedia\ImageMagick\magick.exe" convert "../PNG/%%x_16px.png" "../PNG/%%x_24px.png" "../PNG/%%x_32px.png" "../PNG/%%x_48px.png" "../PNG/%%x_256px.png" "%%x.ico"
 )
