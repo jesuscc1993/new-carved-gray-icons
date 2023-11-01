@@ -17,9 +17,12 @@ const initialize = () => {
     const filesGrid = jQuery(`<div class="grid"></div>`);
 
     files.forEach((file) => {
-      filesGrid.append(
-        `<img class="icon" src="../PNG/${file}_${resolution}px.png" title="${file}">`
-      );
+      const path = `../PNG/${file}_${resolution}px.png`;
+      filesGrid.append(`
+        <a href="${path}" target="_blank">
+          <img class="icon" src="${path}" title="${file}">
+        </a>
+      `);
     });
 
     groupContent.append(filesGrid);

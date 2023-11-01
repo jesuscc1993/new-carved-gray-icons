@@ -70,6 +70,10 @@ a:hover {
   max-width: calc(var(--columns) * (var(--icon-size) + var(--gap)));
 }
 
+.grid a {
+  font-size: 0;
+}
+
 .icon {
   margin: calc(var(--gap) / 2);
   max-height: var(--icon-size);
