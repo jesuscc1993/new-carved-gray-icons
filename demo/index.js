@@ -9,7 +9,7 @@ const initialize = () => {
 
   resolutions.forEach((resolution) => {
     const groupElement = jQuery(`
-      <div class="group">
+      <div class="group px${resolution}">
         <h2>${resolution}px</h2>
       </div>
     `);

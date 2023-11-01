@@ -1,14 +1,12 @@
 :root {
-  --icon-size: 128px;
-  --spacing: 12px;
-  --col-count: 9;
+  --gap: 12px;
 }
 
 body {
   background: #202020;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  margin: var(--spacing) var(--spacing) 33vh;
+  margin: var(--gap) auto 33vh;
 }
 
 a {
@@ -21,23 +19,42 @@ a:hover {
 
 .main {
   margin: 0 auto;
-  max-width: calc((var(--icon-size) + var(--spacing) * 2) * var(--col-count));
   text-align: center;
 }
 
 /*.grid {
   display: grid;
-  grid-gap: var(--spacing);
+  grid-gap: var(--gap);
   grid-template-columns: repeat(auto-fill, var(--icon-size));
   grid-template-rows: repeat(auto-fill, var(--icon-size));
 }*/
 
 .group {
-  margin: 36px 0;
+  --columns: 18;
+
+  margin: 36px auto;
+  max-width: calc(var(--columns) * (var(--icon-size) + var(--gap)));
 }
 
 .icon {
-  margin: var(--spacing);
+  margin: calc(var(--gap) / 2);
   max-height: var(--icon-size);
   max-width: var(--icon-size);
+}
+
+.px256 {
+  --icon-size: 128px;
+  --columns: 9;
+}
+.px48 {
+  --icon-size: 48px;
+}
+.px32 {
+  --icon-size: 32px;
+}
+.px24 {
+  --icon-size: 24px;
+}
+.px16 {
+  --icon-size: 16px;
 }
