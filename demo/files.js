@@ -13,6 +13,7 @@ const files = [
   "cog",
   "comic",
   "computer",
+  "contact",
   "cube",
   "database",
   "design",
