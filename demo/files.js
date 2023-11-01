@@ -28,6 +28,7 @@ const files = [
   "globe",
   "home",
   "image",
+  "jigsaw",
   "library",
   "lock",
   "magnet",
