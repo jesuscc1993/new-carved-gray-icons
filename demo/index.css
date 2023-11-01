@@ -56,7 +56,7 @@ a:hover {
 .group .content {
   background: var(--c-window-bg);
   border-radius: 2px;
-  padding: calc(var(--icon-size) / 4);
+  padding: calc(var(--icon-size) / 6);
 }
 
 /*.grid {
