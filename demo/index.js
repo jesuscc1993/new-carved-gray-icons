@@ -10,9 +10,10 @@ const initialize = () => {
   resolutions.forEach((resolution) => {
     const groupElement = jQuery(`
       <div class="group px${resolution}">
-        <h2>${resolution}px</h2>
+        <div class="title">${resolution}px</div>
       </div>
     `);
+    const groupContent = jQuery(`<div class="content"></div>`);
     const filesGrid = jQuery(`<div class="grid"></div>`);
 
     files.forEach((file) => {
@@ -21,7 +22,8 @@ const initialize = () => {
       );
     });
 
-    groupElement.append(filesGrid);
+    groupContent.append(filesGrid);
+    groupElement.append(groupContent);
     output.append(groupElement);
   });
 };

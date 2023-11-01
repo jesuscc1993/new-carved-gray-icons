@@ -1,12 +1,24 @@
 :root {
   --gap: 12px;
+  --margin: 24px;
+
+  --c-frame: #000;
+  --c-window-bg: #202020;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: #202020;
+  background: #101010;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  margin: var(--gap) auto 33vh;
+  margin: var(--margin) var(--margin) 33vh;
+}
+
+h1 {
+  margin: 0.33em;
 }
 
 a {
@@ -22,6 +34,31 @@ a:hover {
   text-align: center;
 }
 
+.windows {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  --columns: 18;
+
+  background: var(--c-frame);
+  border: 4px solid var(--c-frame);
+  border-radius: 6px;
+  margin: var(--margin) auto;
+}
+
+.group .title {
+  background: var(--c-frame);
+  padding: 4px;
+}
+
+.group .content {
+  background: var(--c-window-bg);
+  border-radius: 2px;
+  padding: calc(var(--icon-size) / 4);
+}
+
 /*.grid {
   display: grid;
   grid-gap: var(--gap);
@@ -29,10 +66,7 @@ a:hover {
   grid-template-rows: repeat(auto-fill, var(--icon-size));
 }*/
 
-.group {
-  --columns: 18;
-
-  margin: 36px auto;
+.grid {
   max-width: calc(var(--columns) * (var(--icon-size) + var(--gap)));
 }
 
