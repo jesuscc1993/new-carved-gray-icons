@@ -33,6 +33,7 @@ const files = [
   "lock",
   "magnet",
   "magnifier",
+  "palette",
   "shortcuts",
   "star",
   "steam",
