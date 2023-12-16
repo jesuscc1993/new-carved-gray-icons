@@ -23,6 +23,7 @@ const files = [
   "floppy",
   "folder",
   "folder_zipped",
+  "folder_zipped_alt",
   "fonts",
   "games",
   "globe",
