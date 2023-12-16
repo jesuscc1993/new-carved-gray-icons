@@ -26,6 +26,7 @@ const files = [
   "fonts",
   "games",
   "globe",
+  "heart",
   "home",
   "image",
   "jigsaw",
