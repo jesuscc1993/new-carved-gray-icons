@@ -1,3 +1,5 @@
-*.psd
+!TIF/_template.tif
+
 *.tif
+
 desktop.ini
