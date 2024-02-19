@@ -30,6 +30,7 @@ for %%x in (
   home
   image
   library
+  link
   lock
   magnet
   magnifier

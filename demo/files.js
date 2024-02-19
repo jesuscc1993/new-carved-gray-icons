@@ -32,6 +32,7 @@ const files = [
   "image",
   "jigsaw",
   "library",
+  "link",
   "lock",
   "magnet",
   "magnifier",
