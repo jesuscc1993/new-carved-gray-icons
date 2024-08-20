@@ -20,6 +20,7 @@ for %%x in (
   design
   desktop
   downloads
+  downloads_alt
   eye
   floppy
   folder

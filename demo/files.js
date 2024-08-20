@@ -19,6 +19,7 @@ const files = [
   "design",
   "desktop",
   "downloads",
+  "downloads_alt",
   "eye",
   "floppy",
   "folder",
