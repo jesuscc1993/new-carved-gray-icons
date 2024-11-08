@@ -1,5 +1,6 @@
 !TIF/_template.tif
 
+*.lnk
 *.tif
 
 desktop.ini
