@@ -1,6 +1,7 @@
 !TIF/_template.tif
 
 *.lnk
+*.rar
 *.tif
 
 desktop.ini
