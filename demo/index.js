@@ -9,23 +9,33 @@ const initialize = () => {
 
   resolutions.forEach((resolution) => {
     const groupElement = jQuery(`
-      <div class="group px${resolution}">
-        <div class="title">${resolution}px</div>
+      <div class="group open px${resolution}"></div>
+    `);
+    groupElement.css('--icon-size', `${Math.min(resolution, 96)}px`);
+    const groupTitle = jQuery(`
+      <div class="group__title">
+        <span class="chevron">&#709;</span>
+        ${resolution} x ${resolution}
       </div>
     `);
-    const groupContent = jQuery(`<div class="content"></div>`);
-    const filesGrid = jQuery(`<div class="grid"></div>`);
+    const groupContent = jQuery(`<div class="group__content"></div>`);
+    groupTitle.on('click', () => groupElement.toggleClass('open'));
 
+    const filesGrid = jQuery(`<div class="grid"></div>`);
     files.forEach((file) => {
       const path = `../PNG/${file}_${resolution}px.png`;
       filesGrid.append(`
-        <a href="${path}" target="_blank">
-          <img class="icon" src="${path}" title="${file}">
+        <a class="cell" href="${path}" target="_blank">
+          <img class="icon ${
+            resolution !== 256 ? 'pixelated' : ''
+          }" src="${path}" title="${file}">
+          <span>${file}</span>
         </a>
       `);
     });
 
     groupContent.append(filesGrid);
+    groupElement.append(groupTitle);
     groupElement.append(groupContent);
     output.append(groupElement);
   });
