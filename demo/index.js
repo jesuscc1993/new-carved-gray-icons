@@ -1,5 +1,11 @@
 const resolutions = [256, 48, 32, 24, 16];
 
+const fileGroups = resolutions.map((size) => ({
+  path: `../PNG`,
+  size,
+  classname: size !== 256 ? 'pixelated' : undefined,
+}));
+
 const fetchJson = (url) => {
   return fetch(url).then((response) => response.json());
 };
@@ -7,15 +13,15 @@ const fetchJson = (url) => {
 const initialize = () => {
   const output = jQuery('#output');
 
-  resolutions.forEach((resolution) => {
+  fileGroups.forEach(({ path, size, classname }) => {
     const groupElement = jQuery(`
-      <div class="group open px${resolution}"></div>
+    <div class="group open px${size}"></div>
     `);
-    groupElement.css('--icon-size', `${Math.min(resolution, 96)}px`);
+    groupElement.css('--icon-size', `${Math.min(size, 96)}px`);
     const groupTitle = jQuery(`
       <div class="group__title">
         <span class="chevron">&#709;</span>
-        ${resolution} x ${resolution}
+      ${size} x ${size}
       </div>
     `);
     const groupContent = jQuery(`<div class="group__content"></div>`);
@@ -23,13 +29,11 @@ const initialize = () => {
 
     const filesGrid = jQuery(`<div class="grid"></div>`);
     files.forEach((file) => {
-      const path = `../PNG/${file}_${resolution}px.png`;
+      const filePath = `${path}/${file}_${size}px.png`;
       filesGrid.append(`
-        <a class="cell" href="${path}" target="_blank">
-          <img class="icon ${
-            resolution !== 256 ? 'pixelated' : ''
-          }" src="${path}" title="${file}">
-          <span>${file}</span>
+      <a class="cell" href="${filePath}" target="_blank">
+        <img class="icon ${classname || ''}" src="${filePath}" title="${file}">
+<span>${file}</span>
         </a>
       `);
     });
