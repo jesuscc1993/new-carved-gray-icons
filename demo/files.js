@@ -7,6 +7,7 @@ const files = [
   "book",
   "camera",
   "cd",
+  "cd_old",
   "chrome",
   "clock",
   "cloud",
