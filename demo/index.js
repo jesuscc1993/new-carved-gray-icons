@@ -20,7 +20,7 @@ const initialize = () => {
     groupElement.css('--icon-size', `${Math.min(size, 96)}`);
     const groupTitle = jQuery(`
       <div class="group__title">
-        <span class="chevron">&#709;</span>
+        <span class="chevron">&#9660;</span>
       ${size} x ${size}
       </div>
     `);
