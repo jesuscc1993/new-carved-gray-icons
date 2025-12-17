@@ -17,7 +17,7 @@ const initialize = () => {
     const groupElement = jQuery(`
     <div class="group open px${size}"></div>
     `);
-    groupElement.css('--icon-size', `${Math.min(size, 96)}px`);
+    groupElement.css('--icon-size', `${Math.min(size, 96)}`);
     const groupTitle = jQuery(`
       <div class="group__title">
         <span class="chevron">&#709;</span>
@@ -29,7 +29,7 @@ const initialize = () => {
 
     const filesGrid = jQuery(`<div class="grid"></div>`);
     files.forEach((file) => {
-      const filePath = `${path}/${file}_${size}px.png`;
+      const filePath = `${path}/${file}_${size}.png`;
       filesGrid.append(`
       <a class="cell" href="${filePath}" target="_blank">
         <img class="icon ${classname || ''}" src="${filePath}" title="${file}">

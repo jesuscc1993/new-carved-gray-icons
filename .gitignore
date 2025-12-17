@@ -3,7 +3,6 @@
 *.tif
 _*
 
-text/
 !TIF/_template.tif
 
 desktop.ini
