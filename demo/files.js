@@ -12,6 +12,7 @@ const files = [
   "clock",
   "cloud",
   "cog",
+  "cog_alt",
   "comic",
   "computer",
   "contact",

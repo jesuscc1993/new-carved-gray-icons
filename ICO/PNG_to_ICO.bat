@@ -13,6 +13,7 @@ for %%x in (
   clock
   cloud
   cog
+  cog_alt
   comic
   computer
   cube
