@@ -53,3 +53,4 @@ for %%x in (
   REM absolute path is more performant
   magick convert "../PNG/%%x_16.png" "../PNG/%%x_24.png" "../PNG/%%x_32.png" "../PNG/%%x_48.png" "../PNG/%%x_256.png" "%%x.ico"
 )
+set /p x="Press enter to exit..."
