@@ -34,6 +34,7 @@ for %%x in (
   library
   link
   lock
+  lock_open
   magnet
   magnifier
   palette
