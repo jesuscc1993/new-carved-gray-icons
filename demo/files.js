@@ -48,6 +48,7 @@ const files = [
   'text',
   'tools',
   'trash',
+  'tv',
   'user',
   'users',
   'video',

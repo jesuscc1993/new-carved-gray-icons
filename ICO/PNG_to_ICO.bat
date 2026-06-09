@@ -46,6 +46,7 @@ for %%x in (
   text
   tools
   trash
+  tv
   user
   users
   video
