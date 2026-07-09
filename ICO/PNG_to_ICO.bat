@@ -7,6 +7,7 @@ for %%x in (
   asterisk
   audio
   book
+  books
   camera
   cd
   chrome

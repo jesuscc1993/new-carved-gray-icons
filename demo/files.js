@@ -5,6 +5,7 @@ const files = [
   'asterisk',
   'audio',
   'book',
+  'books',
   'camera',
   'cd',
   'cd_old',
