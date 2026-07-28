@@ -34,6 +34,7 @@ const files = [
   'heart',
   'home',
   'image',
+  'important',
   'jigsaw',
   'library',
   'link',

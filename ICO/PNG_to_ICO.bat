@@ -32,6 +32,7 @@ for %%x in (
   globe
   home
   image
+  important
   library
   link
   lock
