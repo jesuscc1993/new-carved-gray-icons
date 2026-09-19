@@ -52,6 +52,7 @@ const files = [
   'trash',
   'tv',
   'user',
+  'user_round',
   'users',
   'video',
   'windows',
