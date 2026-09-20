@@ -42,19 +42,20 @@ def generate_icon(icon_name):
   subprocess.run(command, check=True)
   print(f'Generated {output_path.name}')
 
-def prompt_for_name(valid_names):
-  name = input('Enter the name for the file to generate (leave blank to generate them all): ').strip("'\"")
-  if not name:
+def prompt_for_names(valid_names):
+  payload = input('Enter the name for the file to generate (leave blank to generate them all): ').strip("'\"")
+  if not payload:
     return None
 
-  if name not in valid_names:
-    raise ValueError(f'Unknown file name: {name}')
-
-  return [name]
+  names = [n.strip() for n in payload.split(',') if n.strip()]
+  for name in names:
+    if name not in valid_names:
+      raise ValueError(f'Unknown file name: {name}')
+  return names
 
 def main():
   valid_names = read_file_list(FILES_JS)
-  targets = prompt_for_name(valid_names)
+  targets = prompt_for_names(valid_names)
 
   if not targets:
     targets = valid_names
